@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS First Stream - Lei e Ordem: SVU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <h2>⚠️ Atenção!</h2>
+            <p>Detectamos uma tentativa de redirecionamento ou clique em anúncio.</p>
+            <p>O conteúdo permanece bloqueado nesta página.</p>
+            <button id="overlay-close" class="btn-primary">Continuar Assistindo</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">🚑</span>
+            <span class="logo-text">SOS First <span class="highlight">Stream</span></span>
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav-link active">Início</a>
+            <a href="#" class="nav-link">Séries</a>
+            <a href="#" class="nav-link">Favoritos</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar episódio..." id="search-input">
+            <button class="search-btn">🔍</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <span class="badge">Série em Destaque</span>
+                <h1>Lei e Ordem: <br><span class="highlight">Unidade de Vítimas Especiais</span></h1>
+                <p class="hero-desc">A Unidade de Vítimas Especiais do NYPD investiga crimes sexuais e crimes contra crianças, buscando justiça para as vítimas mais vulneráveis da cidade de Nova York.</p>
+                <div class="hero-meta">
+                    <span class="meta-item">⭐ 8.1/10</span>
+                    <span class="meta-item">📺 26 Temporadas</span>
+                    <span class="meta-item">⏱️ ~45 min/ep</span>
+                    <span class="meta-item">🔞 Crime / Drama</span>
+                </div>
+                <div class="hero-actions">
+                    <button class="btn-play" id="btn-play-hero">
+                        <span class="play-icon">▶</span> Assistir Último Episódio
+                    </button>
+                    <button class="btn-secondary">+ Minha Lista</button>
+                </div>
+            </div>
+            <div class="hero-poster">
+                <div class="poster-card">
+                    <div class="poster-img">🎬</div>
+                    <div class="poster-info">
+                        <h3>Law & Order: SVU</h3>
+                        <p>1999 - Presente</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="player-section" id="player-section">
+            <div class="player-header">
+                <h2 id="player-title">Player</h2>
+                <div class="player-controls-top">
+                    <button class="btn-icon" id="btn-fullscreen" title="Tela Cheia">⛶</button>
+                    <button class="btn-icon" id="btn-pip" title="Picture in Picture">📺</button>
+                </div>
+            </div>
+            <div class="player-wrapper" id="player-wrapper">
+                <iframe 
+                    id="video-iframe"
+                    src="" 
+                    allow="autoplay; fullscreen" 
+                    allowfullscreen
+                    sandbox="allow-scripts allow-same-origin allow-presentation"
+                ></iframe>
+                <div class="player-overlay" id="player-overlay">
+                    <div class="play-big" id="play-big">▶</div>
+                </div>
+                <div class="player-loading" id="player-loading">
+                    <div class="spinner"></div>
+                    <p>Carregando episódio...</p>
+                </div>
+            </div>
+            <div class="player-bar">
+                <button class="bar-btn" id="bar-play">▶</button>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                        <div class="progress-thumb" id="progress-thumb"></div>
+                    </div>
+                </div>
+                <span class="time" id="time-display">00:00 / 00:00</span>
+                <button class="bar-btn" id="bar-volume">🔊</button>
+                <button class="bar-btn" id="bar-settings">⚙️</button>
+            </div>
+        </section>
+
+        <section class="seasons-section">
+            <div class="section-header">
+                <h2>📂 Temporadas</h2>
+                <div class="season-selector">
+                    <label for="season-select">Temporada:</label>
+                    <select id="season-select">
+                        <option value="1">Temporada 1</option>
+                        <option value="2">Temporada 2</option>
+                        <option value="3">Temporada 3</option>
+                        <option value="4">Temporada 4</option>
+                        <option value="5">Temporada 5</option>
+                        <option value="6">Temporada 6</option>
+                        <option value="7">Temporada 7</option>
+                        <option value="8">Temporada 8</option>
+                        <option value="9">Temporada 9</option>
+                        <option value="10">Temporada 10</option>
+                        <option value="11">Temporada 11</option>
+                        <option value="12">Temporada 12</option>
+                        <option value="13">Temporada 13</option>
+                        <option value="14">Temporada 14</option>
+                        <option value="15">Temporada 15</option>
+                        <option value="16">Temporada 16</option>
+                        <option value="17">Temporada 17</option>
+                        <option value="18">Temporada 18</option>
+                        <option value="19">Temporada 19</option>
+                        <option value="20">Temporada 20</option>
+                        <option value="21">Temporada 21</option>
+                        <option value="22">Temporada 22</option>
+                        <option value="23">Temporada 23</option>
+                        <option value="24">Temporada 24</option>
+                        <option value="25">Temporada 25</option>
+                        <option value="26">Temporada 26</option>
+                    </select>
+                </div>
+            </div>
+            <div class="episodes-grid" id="episodes-grid">
+                <!-- Episódios gerados via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">🚑</span>
+                <span>SOS First Stream</span>
+            </div>
+            <p class="footer-text">Site criado para fins educacionais. Todos os direitos reservados aos detentores originais do conteúdo.</p>
+            <p class="footer-copy">© 2026 SOS First. Projeto independente de educação.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
